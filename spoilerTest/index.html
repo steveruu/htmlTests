@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML TEST FILE</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <script>
+        function clickFunction() {
+            spoiledText = document.getElementById("spoilerButton");
+            hideButton = document.getElementById("hideButton");
+            showButton = document.getElementById("showButton");
+            
+            spoiledText.style.backgroundColor = "white";
+            hideButton.style.display = "block";
+            showButton.style.display = "none";   
+        } 
+        function hideFunction() {
+            spoiledText = document.getElementById("spoilerButton");
+            hideButton = document.getElementById("hideButton");
+            showButton = document.getElementById("showButton");
+
+            spoiledText.style.backgroundColor = "black";
+            hideButton.style.display = "none";
+            showButton.style.display = "block";
+        }
+        
+    </script>
+    <p><mark id="spoilerButton" style="background-color: black;">spoiler text</mark></p> <button onclick="clickFunction()" id="showButton">show</button> <button onclick="hideFunction()" id="hideButton" style="display:none;">hide</button>
+</body>
+</html>
